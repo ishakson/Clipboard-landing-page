@@ -101,7 +101,10 @@ footer {
     align-items: center; /* Dikey ortalama */
     justify-items: flex-start; /* Yatay ortalama */
 }
-
+footer *:hover {
+    color: var(--strong-cyan);
+    cursor: pointer;
+}
 .faq, .contact, .privacy, .press  {
     display: flex;
     justify-content: center;
@@ -157,6 +160,12 @@ footer {
     justify-content: flex-end; /* İçerikleri sağa yaslar */
     align-items: center;
     gap: 1rem;
+    
+}
+
+.social-links img:hover {
+    filter: brightness(0) saturate(100%) invert(54%) sepia(95%) saturate(592%) hue-rotate(112deg) brightness(92%) contrast(92%);
+
 }
 
 .attribution {
