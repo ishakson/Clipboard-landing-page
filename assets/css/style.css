@@ -61,6 +61,7 @@ header {
 
 .accessibility img {
     margin-top: 6.4rem;
+    width: 50%;
 }
 
 .tools {
@@ -176,4 +177,151 @@ footer *:hover {
 
 .attribution a {
     text-decoration: none;
+}
+
+@media (max-width:120rem) {
+    .computer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    
+    }
+    .computer-text {
+        width:80%;
+        align-items: center;
+    
+       margin: 0 auto;
+    }
+
+    .computer-img {
+        width: 80%;
+    }
+
+    footer {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        align-items: center; /* Dikey ortalama */
+        justify-items: center; /* Yatay ortalama */
+    }
+    
+  
+    .footer-logo {
+        grid-column: 1 / 2;
+        grid-row: 1 /2;
+        margin-top: 1.4rem;
+        
+    }
+    
+    
+    .faq {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        
+    }
+    
+    .contact {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      
+    }
+    
+    .privacy {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+       
+    }
+    
+    .press {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+      
+    }
+    
+    .install {
+        grid-column: 1 / 2;
+        grid-row: 6/ 7;
+        
+       
+    }
+    
+    .social-links {
+        grid-column: 1/ 2;
+        grid-row:7 / 8;
+        justify-content:center; 
+        align-items: center;
+       
+        
+    }
+    
+  
+    
+    .attribution {
+        grid-column: 1/ 2;
+        grid-row: 8/9;
+       
+    }
+    
+    
+    
+}
+
+@media (max-width:97.5rem){
+    .tools {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tool{
+       
+        width: 80%;
+        margin-bottom: 3.2rem;
+    }
+    
+    .tool img{
+        margin-bottom:6.4rem;
+    }
+
+    .brands {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 6.4rem 3.2rem;
+        padding-top: 0rem;
+    }
+    .brands img {
+        margin-bottom: 6.4rem;
+        
+    }
+    .accessibility img {
+        margin-top: 6.4rem;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:67.5rem) {
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .btn {
+       
+        width: 80%;
+        margin-bottom: 1.6rem;
+        
+    }
+   
+
+      .description {
+        width: 80%;
+    
+    }
+    
+  
 }
